@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,10 +28,29 @@ namespace Owl_learn_Blokboek5
             this.InitializeComponent();
         }
 
-        private void login_Click(object sender, RoutedEventArgs e)
+        public static void Navigate(Type typeOfPage)
         {
-            MainPage.Navigate(typeof(DashboardLeerling));
-
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate(typeOfPage);
+                }
+            }
+        }
+            private void login_Click(object sender, RoutedEventArgs e)
+        {
+            if(tbUsername.Text == "leerling" && pbPassword.Password == "123")
+            {
+                MainPage.Navigate(typeof(DashboardLeerling));
+            }
+            else
+            {
+               //Pop up box toevoegen
+            }   
+                
         }
     }
 }

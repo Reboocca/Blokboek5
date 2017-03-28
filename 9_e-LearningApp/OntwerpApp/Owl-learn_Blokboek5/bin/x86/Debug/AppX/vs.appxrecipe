@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-27T10:57:08.178</Modified>
+      <Modified>2017-03-28T09:18:09.159</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\bin\x86\Debug\Owl-learn_Blokboek5.exe">
       <PackagePath>entrypoint\Owl-learn_Blokboek5.exe</PackagePath>
-      <Modified>2017-03-27T10:57:02.915</Modified>
+      <Modified>2017-03-28T09:18:02.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rebecca\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -540,7 +540,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\bin\x86\Debug\Owl-learn_Blokboek5.xr.xml">
       <PackagePath>Owl-learn_Blokboek5.xr.xml</PackagePath>
-      <Modified>2017-03-27T10:57:02.098</Modified>
+      <Modified>2017-03-28T09:18:02.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -549,11 +549,11 @@
     <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-27T10:57:06.607</Modified>
+      <Modified>2017-03-28T09:18:07.900</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\bin\x86\Debug\Core\Owl-learn_Blokboek5.exe">
       <PackagePath>Owl-learn_Blokboek5.exe</PackagePath>
-      <Modified>2017-03-27T10:57:08.166</Modified>
+      <Modified>2017-03-28T09:18:09.154</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

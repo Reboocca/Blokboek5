@@ -33,12 +33,13 @@
             </Grid.ColumnDefinitions>
 
             <Image Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="235" VerticalAlignment="Top" Width="243" Source="Assets/Logo.png" Stretch="Uniform"/>
-            <TextBox x:Name="tbUsername" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" TextWrapping="Wrap" PlaceholderText="Gebruikersnaam" VerticalAlignment="Top" Height="27" Width="307"/>
-            <PasswordBox x:Name="pbPassword" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center"  PlaceholderText="Wachtwoord" VerticalAlignment="Top" Height="27" Width="307"/>
-            <Button Content="Inloggen" HorizontalAlignment="Center"  Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" Height="48" Width="248" Click="login_Click"/>
+            <TextBox x:ConnectionId='1' x:Name="tbUsername" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" TextWrapping="Wrap" PlaceholderText="Gebruikersnaam" VerticalAlignment="Top" Height="27" Width="307"/>
+            <PasswordBox x:ConnectionId='2' x:Name="pbPassword" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center"  PlaceholderText="Wachtwoord" VerticalAlignment="Top" Height="27" Width="307"/>
+            <Button x:ConnectionId='3' Content="Inloggen" HorizontalAlignment="Center"  Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" Height="48" Width="248"                    />
 
 
         </Grid>
 
     </Grid>
 </Page>
+

@@ -65,8 +65,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Foreground" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Owl_learn_Blokboek5.MainPage" />
   </Roots.RootTypes>
