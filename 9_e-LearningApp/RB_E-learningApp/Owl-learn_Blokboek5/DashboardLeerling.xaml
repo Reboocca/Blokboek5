@@ -33,6 +33,36 @@
             <Image x:Name="btLogout" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="2"  Source="Assets/logout.png" Stretch="Uniform" Height="39" Margin="0,0,20,0" Width="37" Tapped="btLogout_Tapped" />
         </Grid>
         <Grid Grid.Column="1" Grid.Row="1" Background="#CCFFFFFF" >
+            <Grid Background="#B2FFFFFF" Margin="100,50,100,138">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="45*"/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="100*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+                <Rectangle Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" Fill="#FF9BC77D"/>
+                <TextBlock Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Welkom bij owl-learn!" FontSize="40px" FontFamily="Calibri Light" Foreground="White" />
+                <TextBlock Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="2" Text="Volg de onderstaande stappen om te beginnen aan een les." FontSize="20px" FontFamily="Calibri Light" Foreground="#FF191919" />
+                <TextBlock Grid.Column="1" Grid.Row="3" Text="Kies een vak:" FontSize="20px" FontFamily="Calibri Light" Foreground="#FF191919" />
+                <TextBlock Grid.Column="1" Grid.Row="4" Text="Kies een lesonderwerp:" FontSize="20px" FontFamily="Calibri Light" Foreground="#FF191919" />
+                <TextBlock Grid.Column="1" Grid.Row="5" Text="Kies een les:" FontSize="20px" FontFamily="Calibri Light" Foreground="#FF191919" />
+                <ComboBox Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" Width="475"/>
+                <ComboBox Grid.Column="3" Grid.Row="4" HorizontalAlignment="Center" Width="475"/>
+                <ComboBox Grid.Column="3" Grid.Row="5" HorizontalAlignment="Center" Width="475"/>
+                <Button Content="Start de les" Grid.Column="3" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Center" Width="475"/>
+            </Grid>
+
         </Grid>
 
     </Grid>
