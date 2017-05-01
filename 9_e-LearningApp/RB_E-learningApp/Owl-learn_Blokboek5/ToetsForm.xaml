@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="Owl_learn_Blokboek5.ToetsForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Owl_learn_Blokboek5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="Auto" Width="Auto" MinWidth="1200" MinHeight="650">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="Assets/Background.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="80*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"  Background="#F2F5F5F5">
+
+        </Grid>
+        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Background="#FFEA6D48" RenderTransformOrigin="0.503,0.611">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="22*"/>
+                <ColumnDefinition Width="80*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+            <Image HorizontalAlignment="Center" Grid.Column="0" VerticalAlignment="Top" Source="Assets/Logo.png" Stretch="Uniform" Height="174" Margin="0,20,0,-202" Width="230"/>
+            <Image x:Name="btLogout" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="2"  Source="Assets/logout.png" Stretch="Uniform" Height="39" Margin="0,0,20,0" Width="37" Tapped="btLogout_Tapped" />
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1" Background="#CCFFFFFF" >
+            <Grid Background="#B2FFFFFF" Margin="100,50,100,138">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="100*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+                <Rectangle Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" Fill="#FF9BC77D"/>
+                <TextBlock x:Name="lbVraag" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Vraag" FontSize="32px" FontFamily="Calibri Light" Foreground="White"/>
+                <Button x:Name="btVerder" Content="Verder" Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Center" Width="675"/>
+                <RadioButton x:Name="rbAntwoord1" Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" FontSize="16px" FontFamily="Calibri Light" Foreground="#FF191919" Grid.Row="2" VerticalAlignment="Center"/>
+                <RadioButton x:Name="rbAntwoord2" Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" FontSize="16px" FontFamily="Calibri Light" Foreground="#FF191919" Grid.Row="3" VerticalAlignment="Center"/>
+                <RadioButton x:Name="rbAntwoord3" Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" FontSize="16px" FontFamily="Calibri Light" Foreground="#FF191919" Grid.Row="4" VerticalAlignment="Center"/>
+                <RadioButton x:Name="rbAntwoord4" Content="RadioButton" Grid.Column="1" HorizontalAlignment="Left" FontSize="16px" FontFamily="Calibri Light" Foreground="#FF191919" Grid.Row="5" VerticalAlignment="Center"/>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Page>
