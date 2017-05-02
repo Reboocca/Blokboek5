@@ -23,15 +23,6 @@ namespace Owl_learn_Blokboek5
     /// </summary>
     public sealed partial class ToetsForm : Page
     {
-        public ToetsForm()
-        {
-            this.InitializeComponent();
-
-            PopulateVraagLijst();
-            SelectVragen();
-            NextQuestion();
-            GetUser();
-        }
         #region fields
         dbs db = new dbs();
         public List<string> _plstVraagID = new List<string>();
@@ -44,7 +35,18 @@ namespace Owl_learn_Blokboek5
         int _iIndex = 0;
         int _piRadioButton = 99;
         int _iScore = 0;
-        #endregion 
+        #endregion
+
+        public ToetsForm()
+        {
+            this.InitializeComponent();
+
+            PopulateVraagLijst();
+            SelectVragen();
+            NextQuestion();
+        }
+
+ 
 
         //Lijst vullen met de vragen van alle lessen:
         public void PopulateVraagLijst()
@@ -96,11 +98,11 @@ namespace Owl_learn_Blokboek5
                     DataTable dtVraag = db.Search("vragen", "VraagID", _psVraagID);
                     foreach (DataRow row in dtVraag.Rows)
                     {
-                        lbVraag.Content = row["Vraag"].ToString();
+                        lbVraag.Text = row["Vraag"].ToString();
                     }
 
-                    int iVraagNummer = _iIndex + 1;
-                    lbVraagNummer.Content = iVraagNummer.ToString() + " van " + _psltSelectieVragen.Count.ToString();
+                    //int iVraagNummer = _iIndex + 1;
+                    //lbVraagNummer.Content = iVraagNummer.ToString() + " van " + _psltSelectieVragen.Count.ToString();
 
                     _iIndex++;
 
@@ -170,5 +172,4 @@ namespace Owl_learn_Blokboek5
             }
         }
     }
-}
 }
