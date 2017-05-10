@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 04, 2017 at 09:38 AM
+-- Generation Time: May 10, 2017 at 12:25 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -19,6 +19,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `voorraadbeheer`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gebruikers`
+--
+
+CREATE TABLE IF NOT EXISTS `gebruikers` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Rol` int(11) NOT NULL,
+  `Username` varchar(255) NOT NULL,
+  `Password` varchar(255) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `gebruikers`
+--
+
+INSERT INTO `gebruikers` (`ID`, `Rol`, `Username`, `Password`) VALUES
+(1, 1, 'Logistiek', 'Logistiek'),
+(2, 2, 'Magazijn', 'Magazijn'),
+(3, 3, 'Administrator', 'Administrator');
 
 -- --------------------------------------------------------
 
