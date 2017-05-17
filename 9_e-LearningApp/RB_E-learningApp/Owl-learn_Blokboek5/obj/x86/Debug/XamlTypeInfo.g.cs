@@ -132,21 +132,25 @@ namespace Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[6];
+            _typeNameTable = new string[8];
             _typeNameTable[0] = "Owl_learn_Blokboek5.DashboardAdmin";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "Owl_learn_Blokboek5.DashboardConsulent";
             _typeNameTable[4] = "Owl_learn_Blokboek5.DashboardLeerling";
-            _typeNameTable[5] = "Owl_learn_Blokboek5.MainPage";
+            _typeNameTable[5] = "Owl_learn_Blokboek5.LesPage";
+            _typeNameTable[6] = "Owl_learn_Blokboek5.MainPage";
+            _typeNameTable[7] = "Owl_learn_Blokboek5.ToetsForm";
 
-            _typeTable = new global::System.Type[6];
+            _typeTable = new global::System.Type[8];
             _typeTable[0] = typeof(global::Owl_learn_Blokboek5.DashboardAdmin);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::Owl_learn_Blokboek5.DashboardConsulent);
             _typeTable[4] = typeof(global::Owl_learn_Blokboek5.DashboardLeerling);
-            _typeTable[5] = typeof(global::Owl_learn_Blokboek5.MainPage);
+            _typeTable[5] = typeof(global::Owl_learn_Blokboek5.LesPage);
+            _typeTable[6] = typeof(global::Owl_learn_Blokboek5.MainPage);
+            _typeTable[7] = typeof(global::Owl_learn_Blokboek5.ToetsForm);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -184,7 +188,9 @@ namespace Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo
         private object Activate_0_DashboardAdmin() { return new global::Owl_learn_Blokboek5.DashboardAdmin(); }
         private object Activate_3_DashboardConsulent() { return new global::Owl_learn_Blokboek5.DashboardConsulent(); }
         private object Activate_4_DashboardLeerling() { return new global::Owl_learn_Blokboek5.DashboardLeerling(); }
-        private object Activate_5_MainPage() { return new global::Owl_learn_Blokboek5.MainPage(); }
+        private object Activate_5_LesPage() { return new global::Owl_learn_Blokboek5.LesPage(); }
+        private object Activate_6_MainPage() { return new global::Owl_learn_Blokboek5.MainPage(); }
+        private object Activate_7_ToetsForm() { return new global::Owl_learn_Blokboek5.ToetsForm(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -225,9 +231,23 @@ namespace Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  Owl_learn_Blokboek5.MainPage
+            case 5:   //  Owl_learn_Blokboek5.LesPage
                 userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_MainPage;
+                userType.Activator = Activate_5_LesPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  Owl_learn_Blokboek5.MainPage
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  Owl_learn_Blokboek5.ToetsForm
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_ToetsForm;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

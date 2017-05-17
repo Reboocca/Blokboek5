@@ -57,10 +57,11 @@
                 <TextBlock Grid.Column="1" Grid.Row="3" Text="Kies een vak:" FontSize="20px" FontFamily="Calibri Light" Foreground="#FF191919" />
                 <TextBlock Grid.Column="1" Grid.Row="4" Text="Kies een lesonderwerp:" FontSize="20px" FontFamily="Calibri Light" Foreground="#FF191919" />
                 <TextBlock Grid.Column="1" Grid.Row="5" Text="Kies een les:" FontSize="20px" FontFamily="Calibri Light" Foreground="#FF191919" />
-                <ComboBox Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" Width="475"/>
-                <ComboBox Grid.Column="3" Grid.Row="4" HorizontalAlignment="Center" Width="475"/>
-                <ComboBox Grid.Column="3" Grid.Row="5" HorizontalAlignment="Center" Width="475"/>
-                <Button Content="Start de les" Grid.Column="3" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Center" Width="475"/>
+                <ComboBox x:Name="cbVak" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" Width="475" ItemsSource="{Binding Vak}" SelectedValue="{Binding VakNaam}" SelectedValuePath="ID" DisplayMemberPath="VakNaam" SelectionChanged="cbVak_SelectionChanged"/>
+                <ComboBox x:Name="cbLesonderwerp" Grid.Column="3" Grid.Row="4" HorizontalAlignment="Center" Width="475" ItemsSource="{Binding Lesonderwerp}" SelectedValue="{Binding LesonderwerpNaam}" SelectedValuePath="ID" DisplayMemberPath="LesonderwerpNaam" SelectionChanged="cbLesonderwerp_SelectionChanged"/>
+                <ComboBox x:Name="cbLes" Grid.Column="3" Grid.Row="5" HorizontalAlignment="Center" Width="475" ItemsSource="{Binding Les}" SelectedValue="{Binding LesNaam}" SelectedValuePath="ID" DisplayMemberPath="LesNaam" SelectionChanged="cbLes_SelectionChanged"/>
+                <Button x:Name="btStart" Content="Kies eerst een les om te beginnen" Grid.Column="3" Grid.Row="6" VerticalAlignment="Center" HorizontalAlignment="Center" Width="475" IsEnabled="False" Click="btStart_Click"/>
+                <TextBlock x:Name="tbNoLes" Grid.Column="3" Grid.Row="7" Text="" FontSize="20px" FontFamily="Calibri Light" Foreground="#FFA03131" Grid.ColumnSpan="2" Margin="0,0,23.333,0" />
             </Grid>
 
         </Grid>

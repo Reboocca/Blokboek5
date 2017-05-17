@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -28,37 +29,57 @@ namespace Owl_learn_Blokboek5
             this.InitializeComponent();
         }
 
-        public static void Navigate(Type typeOfPage)
+
+        string login = "false";
+        string rolID = null;
+
+        private void login_Click(object sender, RoutedEventArgs e)
         {
-            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
-            if (window != null)
-            {
-                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
-                if (frame != null)
-                {
-                    frame.Navigate(typeOfPage);
-                }
-            }
+            LoginFunction(tbUsername.Text, pbPassword.Password);
         }
-            private void login_Click(object sender, RoutedEventArgs e)
+
+
+        public async void LoginFunction(string user, string pwd)  // MainPage.xaml.cs        
         {
-            if(tbUsername.Text == "leerling" && pbPassword.Password == "123")
+            HttpClient connect = new HttpClient();
+            HttpResponseMessage logincheck = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/login.php?user=" + user + "&pwd=" + pwd);
+            // gebruik eventueel PostAsync
+            logincheck.EnsureSuccessStatusCode();
+
+            login = await logincheck.Content.ReadAsStringAsync();
+
+            if(login != "false")
             {
-                MainPage.Navigate(typeof(DashboardLeerling));
-            }
-            else if(tbUsername.Text == "docent" && pbPassword.Password == "123")
-            {
-                MainPage.Navigate(typeof(DashboardConsulent));
-            }
-            else if (tbUsername.Text == "admin" && pbPassword.Password == "123")
-            {
-                MainPage.Navigate(typeof(DashboardAdmin));
+                HttpResponseMessage rolcheck = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/rol.php?id=" + login );
+                rolcheck.EnsureSuccessStatusCode();
+                rolID = await rolcheck.Content.ReadAsStringAsync();
+
+                if (rolID == "1")
+                {
+                    var parameters = new user();
+                    parameters.userID = login;
+
+                    this.Frame.Navigate(typeof(DashboardConsulent), parameters);
+                }
+
+                else if(rolID == "2")
+                {
+                    var parameters = new user();
+                    parameters.userID = login;
+                    this.Frame.Navigate(typeof(DashboardLeerling), parameters);
+                }
+
+                else if(rolID == "3")
+                {
+                    this.Frame.Navigate(typeof(DashboardAdmin));
+                }
+                
             }
             else
             {
-               //Pop up box toevoegen
-            }   
-                
+                var dialog = new MessageDialog("De gebruikte gebruikersnaam en/of wachtwoord is onjuist.", "Foutmelding");
+                await dialog.ShowAsync();
+            }
         }
     }
 }

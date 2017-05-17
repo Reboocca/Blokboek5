@@ -24,7 +24,6 @@ namespace Owl_learn_Blokboek5
     public sealed partial class ToetsForm : Page
     {
         #region fields
-        dbs db = new dbs();
         public List<string> _plstVraagID = new List<string>();
         public List<string> _psltSelectieVragen = new List<string>();
         public List<string> _lstAntwoorden = new List<string>();
@@ -41,13 +40,13 @@ namespace Owl_learn_Blokboek5
         {
             this.InitializeComponent();
 
-            PopulateVraagLijst();
-            SelectVragen();
-            NextQuestion();
+            //PopulateVraagLijst();
+            //SelectVragen();
+            //NextQuestion();
         }
 
- 
 
+        /*
         //Lijst vullen met de vragen van alle lessen:
         public void PopulateVraagLijst()
         {
@@ -170,6 +169,6 @@ namespace Owl_learn_Blokboek5
             {
                 //MessageBox.Show("Zorg ervoor dat je een antwoord hebt aangevinkt!", "oops!");
             }
-        }
+        }*/
     }
 }

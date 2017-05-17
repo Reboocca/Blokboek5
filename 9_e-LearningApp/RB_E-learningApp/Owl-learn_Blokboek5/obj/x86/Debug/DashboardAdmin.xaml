@@ -23,7 +23,7 @@
         <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"  Background="#F2F5F5F5">
 
         </Grid>
-        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Background="#FFEA5E48" RenderTransformOrigin="0.503,0.611">
+        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Background="#FF4EC3A3" RenderTransformOrigin="0.503,0.611">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="22*"/>
                 <ColumnDefinition Width="80*"/>

@@ -10,13 +10,13 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ab12fe5e-9772-4f25-b464-c2b898654a5d</PackageIdentityName>
     <PackageIdentityPublisher>CN=Rebecca</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>6495B5069D0DCEDE8D2956962E444A48F5C1ADF1F6E658F4276E7562777A5F60</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>F96E779C2352B19C0D3F4A96B0312D3C8C6EF16E726A3B05725330F12BD83C65</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>ab12fe5e-9772-4f25-b464-c2b898654a5d_1.0.0.0_x86__brj6x21e721n4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>ab12fe5e-9772-4f25-b464-c2b898654a5d_brj6x21e721n4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>ab12fe5e-9772-4f25-b464-c2b898654a5d</RegisteredPackageID>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-29T13:30:05.995</Modified>
+      <Modified>2017-05-17T09:25:29.096</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\bin\x86\Debug\Owl-learn_Blokboek5.exe">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\Owl-learn_Blokboek5.exe">
       <PackagePath>entrypoint\Owl-learn_Blokboek5.exe</PackagePath>
-      <Modified>2017-03-29T13:30:03.319</Modified>
+      <Modified>2017-05-17T09:25:28.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rebecca\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -492,80 +492,153 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T21:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Assets\Background.png">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MySQL\MySQL Connector Net 6.8.7\Assemblies\RT\MySql.Data.RT.dll">
+      <PackagePath>MySql.Data.RT.dll</PackagePath>
+      <Modified>2015-05-15T01:38:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Background.png">
       <PackagePath>Assets\Background.png</PackagePath>
       <Modified>2017-03-22T13:14:33.154</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Assets\BackgroundAdmin.png">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\BackgroundAdmin.png">
       <PackagePath>Assets\BackgroundAdmin.png</PackagePath>
       <Modified>2017-03-29T13:04:23.100</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Assets\BackgroundConsulent.png">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\BackgroundConsulent.png">
       <PackagePath>Assets\BackgroundConsulent.png</PackagePath>
       <Modified>2017-03-29T12:46:25.208</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Assets\Logo.png">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <Modified>2017-03-22T13:18:31.227</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Assets\logout.png">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\logout.png">
       <PackagePath>Assets\logout.png</PackagePath>
       <Modified>2017-03-29T13:11:41.442</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.668</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.706</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.684</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.693</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.504</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.518</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.532</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.578</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.586</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.594</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.660</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.602</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-05-16T07:34:15.649</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\userICON.png">
+      <PackagePath>Assets\userICON.png</PackagePath>
+      <Modified>2017-05-16T07:45:57.158</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-02-18T15:17:09.077</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-02-18T15:17:09.077</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-02-18T15:17:09.077</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-18T15:17:09.077</Modified>
+      <Modified>2017-05-16T07:34:15.543</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-18T15:17:09.077</Modified>
+      <Modified>2017-05-16T07:34:15.676</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-02-18T15:17:09.077</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-02-18T15:17:09.077</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-03-22T12:58:08.012</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\bin\x86\Debug\Owl-learn_Blokboek5.xr.xml">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\Owl-learn_Blokboek5.xr.xml">
       <PackagePath>Owl-learn_Blokboek5.xr.xml</PackagePath>
-      <Modified>2017-03-29T13:30:02.943</Modified>
+      <Modified>2017-05-17T08:13:12.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-02-18T15:52:15.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-03-29T13:30:05.330</Modified>
+      <Modified>2017-05-17T08:13:13.628</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Rebecca\Desktop\Owl-learn\Owl-learn_Blokboek5\Owl-learn_Blokboek5\bin\x86\Debug\Core\Owl-learn_Blokboek5.exe">
+    <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\Core\Owl-learn_Blokboek5.exe">
       <PackagePath>Owl-learn_Blokboek5.exe</PackagePath>
-      <Modified>2017-03-29T13:30:05.989</Modified>
+      <Modified>2017-05-17T09:25:29.091</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -21962,10 +21962,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\School\\Blokboek5\\9_e-LearningApp\\RB_E-learningApp\\Owl-learn_Blokboek5\\Owl-learn_Blokboek5.csproj",
+      "projectUniqueName": "D:\\School\\Gitblub\\Visual Studios\\2\\RB_E-learningApp\\Owl-learn_Blokboek5\\Owl-learn_Blokboek5.csproj",
       "projectName": "Owl-learn_Blokboek5",
-      "projectPath": "D:\\School\\Blokboek5\\9_e-LearningApp\\RB_E-learningApp\\Owl-learn_Blokboek5\\Owl-learn_Blokboek5.csproj",
-      "projectJsonPath": "D:\\School\\Blokboek5\\9_e-LearningApp\\RB_E-learningApp\\Owl-learn_Blokboek5\\project.json",
+      "projectPath": "D:\\School\\Gitblub\\Visual Studios\\2\\RB_E-learningApp\\Owl-learn_Blokboek5\\Owl-learn_Blokboek5.csproj",
+      "projectJsonPath": "D:\\School\\Gitblub\\Visual Studios\\2\\RB_E-learningApp\\Owl-learn_Blokboek5\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

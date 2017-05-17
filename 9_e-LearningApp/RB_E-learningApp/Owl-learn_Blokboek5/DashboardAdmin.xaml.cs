@@ -27,22 +27,9 @@ namespace Owl_learn_Blokboek5
             this.InitializeComponent();
         }
 
-        public static void Navigate(Type typeOfPage)
-        {
-            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
-            if (window != null)
-            {
-                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
-                if (frame != null)
-                {
-                    frame.Navigate(typeOfPage);
-                }
-            }
-        }
-
         private void btLogout_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            DashboardLeerling.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }
