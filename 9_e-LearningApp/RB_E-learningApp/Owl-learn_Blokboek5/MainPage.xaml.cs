@@ -42,7 +42,7 @@ namespace Owl_learn_Blokboek5
         public async void LoginFunction(string user, string pwd)  // MainPage.xaml.cs        
         {
             HttpClient connect = new HttpClient();
-            HttpResponseMessage logincheck = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/login.php?user=" + user + "&pwd=" + pwd);
+            HttpResponseMessage logincheck = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/Login/login.php?user=" + user + "&pwd=" + pwd);
             // gebruik eventueel PostAsync
             logincheck.EnsureSuccessStatusCode();
 
@@ -50,7 +50,7 @@ namespace Owl_learn_Blokboek5
 
             if(login != "false")
             {
-                HttpResponseMessage rolcheck = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/rol.php?id=" + login );
+                HttpResponseMessage rolcheck = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/Login/rol.php?id=" + login );
                 rolcheck.EnsureSuccessStatusCode();
                 rolID = await rolcheck.Content.ReadAsStringAsync();
 
@@ -71,7 +71,10 @@ namespace Owl_learn_Blokboek5
 
                 else if(rolID == "3")
                 {
-                    this.Frame.Navigate(typeof(DashboardAdmin));
+                    var parameters = new user();
+                    parameters.userID = login;
+                    this.Frame.Navigate(typeof(DashboardAdmin), parameters);
+
                 }
                 
             }

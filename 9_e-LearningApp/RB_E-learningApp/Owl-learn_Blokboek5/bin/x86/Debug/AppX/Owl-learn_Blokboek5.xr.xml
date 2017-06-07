@@ -1,13 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Omschrijving" />
     <RootPropertyPathName Name="ID" />
-    <RootPropertyPathName Name="VakNaam" />
-    <RootPropertyPathName Name="LesonderwerpNaam" />
+    <RootPropertyPathName Name="Vraag" />
     <RootPropertyPathName Name="LesNaam" />
-    <RootPropertyPathName Name="Les" />
+    <RootPropertyPathName Name="LONaam" />
     <RootPropertyPathName Name="Lesonderwerp" />
+    <RootPropertyPathName Name="Les" />
+    <RootPropertyPathName Name="Naam" />
+    <RootPropertyPathName Name="Account" />
+    <RootPropertyPathName Name="VakNaam" />
     <RootPropertyPathName Name="Vak" />
+    <RootPropertyPathName Name="LesonderwerpNaam" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -46,6 +51,50 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsEnabled" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="TextChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootEvent Name="PasswordChanged" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
@@ -57,42 +106,37 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootEvent Name="Tapped" />
     </RootType>
-    <RootType FullName="Owl_learn_Blokboek5.DashboardAdmin" />
-    <RootType FullName="Owl_learn_Blokboek5.DashboardConsulent" />
-    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
-      <RootProperty Name="Fill" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+    <RootType FullName="Owl_learn_Blokboek5.BewerkAccount" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Text" />
+      <RootProperty Name="Width" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedValue" />
+      <RootProperty Name="DisplayMemberPath" />
+      <RootProperty Name="SelectedValuePath" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Owl_learn_Blokboek5.BewerkLes" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedValue" />
       <RootProperty Name="SelectedValuePath" />
       <RootProperty Name="DisplayMemberPath" />
+      <RootProperty Name="Items" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="IsEnabled" />
-      <RootProperty Name="Height" />
-      <RootEvent Name="Click" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Owl_learn_Blokboek5.BewerkVak" />
+    <RootType FullName="Owl_learn_Blokboek5.DashboardAdmin" />
+    <RootType FullName="Owl_learn_Blokboek5.DashboardConsulent" />
     <RootType FullName="Owl_learn_Blokboek5.DashboardLeerling" />
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
       <RootProperty Name="Content" />
@@ -104,22 +148,23 @@
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Owl_learn_Blokboek5.LesPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="PlaceholderText" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="PlaceholderText" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-    </RootType>
     <RootType FullName="Owl_learn_Blokboek5.MainPage" />
-    <RootType FullName="Owl_learn_Blokboek5.ToetsForm" />
+    <RootType FullName="Owl_learn_Blokboek5.Toetskiezen" />
+    <RootType FullName="Owl_learn_Blokboek5.ToetsPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
+      <RootProperty Name="Content" />
+      <RootProperty Name="IsSelected" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="IsEnabled" />
+    </RootType>
+    <RootType FullName="Owl_learn_Blokboek5.ToevoegAccount" />
+    <RootType FullName="Owl_learn_Blokboek5.ToevoegLes" />
+    <RootType FullName="Owl_learn_Blokboek5.ToevoegVak" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Owl_learn_Blokboek5.ToevoegVraag" />
+    <RootType FullName="Owl_learn_Blokboek5.VerwijderAccount" />
+    <RootType FullName="Owl_learn_Blokboek5.VerwijderLes" />
+    <RootType FullName="Owl_learn_Blokboek5.VerwijderLesonderwerp" />
+    <RootType FullName="Owl_learn_Blokboek5.VerwijderVak" />
   </Roots.RootTypes>
 </Roots>

@@ -60,7 +60,7 @@ namespace Owl_learn_Blokboek5
         public async void getUitleg()
         {
             HttpClient connect = new HttpClient();
-            HttpResponseMessage getUitleg = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/getUitleg.php?lID=" + lesid);
+            HttpResponseMessage getUitleg = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/Lesform/getUitleg.php?lID=" + lesid);
             // gebruik eventueel PostAsync
             getUitleg.EnsureSuccessStatusCode();
             
@@ -70,7 +70,7 @@ namespace Owl_learn_Blokboek5
         public async void getVragenLijst()
         {
             HttpClient connect = new HttpClient();
-            HttpResponseMessage getVraaginfo = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/getVragen.php?lID=" + lesid);
+            HttpResponseMessage getVraaginfo = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/Lesform/getVragen.php?lID=" + lesid);
             // gebruik eventueel PostAsync
             getVraaginfo.EnsureSuccessStatusCode();
 
@@ -90,13 +90,12 @@ namespace Owl_learn_Blokboek5
             }
 
             NextQuestion();
-            getAntwoorden(_sVraagID);
         }
 
         public async void getAntwoorden(string vID)
         {
             HttpClient connect = new HttpClient();
-            HttpResponseMessage getAntwoorden = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/getAntwoorden.php?vID=" + vID);
+            HttpResponseMessage getAntwoorden = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/Lesform/getAntwoorden.php?vID=" + vID);
             // gebruik eventueel PostAsync
             getAntwoorden.EnsureSuccessStatusCode();
 
@@ -124,7 +123,7 @@ namespace Owl_learn_Blokboek5
         public async void getLesNaam()
         {
             HttpClient connect = new HttpClient();
-            HttpResponseMessage getNaam = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/getLesNaam.php?lID=" + lesid);
+            HttpResponseMessage getNaam = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/Lesform/getLesNaam.php?lID=" + lesid);
             // gebruik eventueel PostAsync
             getNaam.EnsureSuccessStatusCode();
 
@@ -153,7 +152,7 @@ namespace Owl_learn_Blokboek5
                 if (_piRadioButton != 99)
                 {
                     HttpClient connect = new HttpClient();
-                    HttpResponseMessage checkAntwoord = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/checkAntwoord.php?antwoord=" + _lstAntwoorden[_piRadioButton] + "&vID=" + _sVraagID );
+                    HttpResponseMessage checkAntwoord = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/Lesform/checkAntwoord.php?antwoord=" + _lstAntwoorden[_piRadioButton] + "&vID=" + _sVraagID );
                     // gebruik eventueel PostAsync
                     checkAntwoord.EnsureSuccessStatusCode();
 
@@ -195,11 +194,35 @@ namespace Owl_learn_Blokboek5
                 {
                     var dialog = new MessageDialog("Je hebt " + _iScore.ToString() + " van de " + _lsVragen.Count.ToString() + " vragen goed beantwoord, de les is voltooid.", "Goed gedaan!");
                     await dialog.ShowAsync();
+
+                    HttpClient connect = new HttpClient();
+                    HttpResponseMessage saveVoortgang = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/Lesform/saveVoortgang.php?lID=" + lesid + "&uID=" + userid);
+                    // gebruik eventueel PostAsync
+                    saveVoortgang.EnsureSuccessStatusCode();
+
+                    string resultaat = await saveVoortgang.Content.ReadAsStringAsync();
+
+                   if(resultaat == "failed")
+                    {
+                        //Wanneer het mislukt is om de voortgang op te slaan, geef een foutmelding en ga terug naar het dashboard
+                        var dialog1 = new MessageDialog("Er is iets missgegaan met het opslaan van jouw voortgang", "Foutmelding");
+                        await dialog1.ShowAsync();
+                    }
+
+                    var parameters = new user();
+                    parameters.userID = userid;
+
+                    this.Frame.Navigate(typeof(DashboardLeerling), parameters);
                 }
                 else
                 {
                     var dialog = new MessageDialog("Je hebt " + _iScore.ToString() + " van de " + _lsVragen.Count.ToString() + " vragen goed beantwoord, maak de les opnieuw.", "Volgende keer beter!");
                     await dialog.ShowAsync();
+
+                    var parameters = new user();
+                    parameters.userID = userid;
+
+                    this.Frame.Navigate(typeof(DashboardLeerling), parameters);
                 }
 
             }

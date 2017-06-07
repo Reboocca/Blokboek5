@@ -66,7 +66,7 @@ namespace Owl_learn_Blokboek5
         public async void getVakken()
         {
             HttpClient connect = new HttpClient();
-            HttpResponseMessage getVakken = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/getVakken.php");
+            HttpResponseMessage getVakken = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/LeerlingDashboard/getVakken.php");
             // gebruik eventueel PostAsync
             getVakken.EnsureSuccessStatusCode();
 
@@ -89,7 +89,7 @@ namespace Owl_learn_Blokboek5
         public async void getLesonderwerp(string selectedVakID)
         {
             HttpClient connect = new HttpClient();
-            HttpResponseMessage getLesonderwerp = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/getLesonderwerp.php?vakID=" + selectedVakID);
+            HttpResponseMessage getLesonderwerp = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/LeerlingDashboard/getLesonderwerp.php?vakID=" + selectedVakID);
             // gebruik eventueel PostAsync
             getLesonderwerp.EnsureSuccessStatusCode();
 
@@ -114,7 +114,7 @@ namespace Owl_learn_Blokboek5
         public async void getLes(string selectedLOid)
         {
             HttpClient connect = new HttpClient();
-            HttpResponseMessage getLessen = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/getLessen.php?loID=" + selectedLOid);
+            HttpResponseMessage getLessen = await connect.GetAsync("http://localhost/Leerjaar2/OP3/Owl-learn/functies/LeerlingDashboard/getLessen.php?loID=" + selectedLOid);
             // gebruik eventueel PostAsync
             getLessen.EnsureSuccessStatusCode();
 
@@ -203,6 +203,14 @@ namespace Owl_learn_Blokboek5
 
                 this.Frame.Navigate(typeof(LesPage), parameters);
             }
+        }
+
+        private void btToets_Click(object sender, RoutedEventArgs e)
+        {
+            var parameters = new user();
+            parameters.userID = userid;
+
+            this.Frame.Navigate(typeof(Toetskiezen), parameters);
         }
     }
 }

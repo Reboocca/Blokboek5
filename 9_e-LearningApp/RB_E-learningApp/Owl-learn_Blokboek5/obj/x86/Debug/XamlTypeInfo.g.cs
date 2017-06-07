@@ -132,25 +132,49 @@ namespace Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[8];
-            _typeNameTable[0] = "Owl_learn_Blokboek5.DashboardAdmin";
+            _typeNameTable = new string[20];
+            _typeNameTable[0] = "Owl_learn_Blokboek5.BewerkAccount";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Owl_learn_Blokboek5.DashboardConsulent";
-            _typeNameTable[4] = "Owl_learn_Blokboek5.DashboardLeerling";
-            _typeNameTable[5] = "Owl_learn_Blokboek5.LesPage";
-            _typeNameTable[6] = "Owl_learn_Blokboek5.MainPage";
-            _typeNameTable[7] = "Owl_learn_Blokboek5.ToetsForm";
+            _typeNameTable[3] = "Owl_learn_Blokboek5.BewerkLes";
+            _typeNameTable[4] = "Owl_learn_Blokboek5.BewerkVak";
+            _typeNameTable[5] = "Owl_learn_Blokboek5.DashboardAdmin";
+            _typeNameTable[6] = "Owl_learn_Blokboek5.DashboardConsulent";
+            _typeNameTable[7] = "Owl_learn_Blokboek5.DashboardLeerling";
+            _typeNameTable[8] = "Owl_learn_Blokboek5.LesPage";
+            _typeNameTable[9] = "Owl_learn_Blokboek5.MainPage";
+            _typeNameTable[10] = "Owl_learn_Blokboek5.Toetskiezen";
+            _typeNameTable[11] = "Owl_learn_Blokboek5.ToetsPage";
+            _typeNameTable[12] = "Owl_learn_Blokboek5.ToevoegAccount";
+            _typeNameTable[13] = "Owl_learn_Blokboek5.ToevoegLes";
+            _typeNameTable[14] = "Owl_learn_Blokboek5.ToevoegVak";
+            _typeNameTable[15] = "Owl_learn_Blokboek5.ToevoegVraag";
+            _typeNameTable[16] = "Owl_learn_Blokboek5.VerwijderAccount";
+            _typeNameTable[17] = "Owl_learn_Blokboek5.VerwijderLes";
+            _typeNameTable[18] = "Owl_learn_Blokboek5.VerwijderLesonderwerp";
+            _typeNameTable[19] = "Owl_learn_Blokboek5.VerwijderVak";
 
-            _typeTable = new global::System.Type[8];
-            _typeTable[0] = typeof(global::Owl_learn_Blokboek5.DashboardAdmin);
+            _typeTable = new global::System.Type[20];
+            _typeTable[0] = typeof(global::Owl_learn_Blokboek5.BewerkAccount);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Owl_learn_Blokboek5.DashboardConsulent);
-            _typeTable[4] = typeof(global::Owl_learn_Blokboek5.DashboardLeerling);
-            _typeTable[5] = typeof(global::Owl_learn_Blokboek5.LesPage);
-            _typeTable[6] = typeof(global::Owl_learn_Blokboek5.MainPage);
-            _typeTable[7] = typeof(global::Owl_learn_Blokboek5.ToetsForm);
+            _typeTable[3] = typeof(global::Owl_learn_Blokboek5.BewerkLes);
+            _typeTable[4] = typeof(global::Owl_learn_Blokboek5.BewerkVak);
+            _typeTable[5] = typeof(global::Owl_learn_Blokboek5.DashboardAdmin);
+            _typeTable[6] = typeof(global::Owl_learn_Blokboek5.DashboardConsulent);
+            _typeTable[7] = typeof(global::Owl_learn_Blokboek5.DashboardLeerling);
+            _typeTable[8] = typeof(global::Owl_learn_Blokboek5.LesPage);
+            _typeTable[9] = typeof(global::Owl_learn_Blokboek5.MainPage);
+            _typeTable[10] = typeof(global::Owl_learn_Blokboek5.Toetskiezen);
+            _typeTable[11] = typeof(global::Owl_learn_Blokboek5.ToetsPage);
+            _typeTable[12] = typeof(global::Owl_learn_Blokboek5.ToevoegAccount);
+            _typeTable[13] = typeof(global::Owl_learn_Blokboek5.ToevoegLes);
+            _typeTable[14] = typeof(global::Owl_learn_Blokboek5.ToevoegVak);
+            _typeTable[15] = typeof(global::Owl_learn_Blokboek5.ToevoegVraag);
+            _typeTable[16] = typeof(global::Owl_learn_Blokboek5.VerwijderAccount);
+            _typeTable[17] = typeof(global::Owl_learn_Blokboek5.VerwijderLes);
+            _typeTable[18] = typeof(global::Owl_learn_Blokboek5.VerwijderLesonderwerp);
+            _typeTable[19] = typeof(global::Owl_learn_Blokboek5.VerwijderVak);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -185,12 +209,24 @@ namespace Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_DashboardAdmin() { return new global::Owl_learn_Blokboek5.DashboardAdmin(); }
-        private object Activate_3_DashboardConsulent() { return new global::Owl_learn_Blokboek5.DashboardConsulent(); }
-        private object Activate_4_DashboardLeerling() { return new global::Owl_learn_Blokboek5.DashboardLeerling(); }
-        private object Activate_5_LesPage() { return new global::Owl_learn_Blokboek5.LesPage(); }
-        private object Activate_6_MainPage() { return new global::Owl_learn_Blokboek5.MainPage(); }
-        private object Activate_7_ToetsForm() { return new global::Owl_learn_Blokboek5.ToetsForm(); }
+        private object Activate_0_BewerkAccount() { return new global::Owl_learn_Blokboek5.BewerkAccount(); }
+        private object Activate_3_BewerkLes() { return new global::Owl_learn_Blokboek5.BewerkLes(); }
+        private object Activate_4_BewerkVak() { return new global::Owl_learn_Blokboek5.BewerkVak(); }
+        private object Activate_5_DashboardAdmin() { return new global::Owl_learn_Blokboek5.DashboardAdmin(); }
+        private object Activate_6_DashboardConsulent() { return new global::Owl_learn_Blokboek5.DashboardConsulent(); }
+        private object Activate_7_DashboardLeerling() { return new global::Owl_learn_Blokboek5.DashboardLeerling(); }
+        private object Activate_8_LesPage() { return new global::Owl_learn_Blokboek5.LesPage(); }
+        private object Activate_9_MainPage() { return new global::Owl_learn_Blokboek5.MainPage(); }
+        private object Activate_10_Toetskiezen() { return new global::Owl_learn_Blokboek5.Toetskiezen(); }
+        private object Activate_11_ToetsPage() { return new global::Owl_learn_Blokboek5.ToetsPage(); }
+        private object Activate_12_ToevoegAccount() { return new global::Owl_learn_Blokboek5.ToevoegAccount(); }
+        private object Activate_13_ToevoegLes() { return new global::Owl_learn_Blokboek5.ToevoegLes(); }
+        private object Activate_14_ToevoegVak() { return new global::Owl_learn_Blokboek5.ToevoegVak(); }
+        private object Activate_15_ToevoegVraag() { return new global::Owl_learn_Blokboek5.ToevoegVraag(); }
+        private object Activate_16_VerwijderAccount() { return new global::Owl_learn_Blokboek5.VerwijderAccount(); }
+        private object Activate_17_VerwijderLes() { return new global::Owl_learn_Blokboek5.VerwijderLes(); }
+        private object Activate_18_VerwijderLesonderwerp() { return new global::Owl_learn_Blokboek5.VerwijderLesonderwerp(); }
+        private object Activate_19_VerwijderVak() { return new global::Owl_learn_Blokboek5.VerwijderVak(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -202,9 +238,9 @@ namespace Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Owl_learn_Blokboek5.DashboardAdmin
+            case 0:   //  Owl_learn_Blokboek5.BewerkAccount
                 userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_DashboardAdmin;
+                userType.Activator = Activate_0_BewerkAccount;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -217,37 +253,121 @@ namespace Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo
                 xamlType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Owl_learn_Blokboek5.DashboardConsulent
+            case 3:   //  Owl_learn_Blokboek5.BewerkLes
                 userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_DashboardConsulent;
+                userType.Activator = Activate_3_BewerkLes;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Owl_learn_Blokboek5.DashboardLeerling
+            case 4:   //  Owl_learn_Blokboek5.BewerkVak
                 userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_DashboardLeerling;
+                userType.Activator = Activate_4_BewerkVak;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Owl_learn_Blokboek5.LesPage
+            case 5:   //  Owl_learn_Blokboek5.DashboardAdmin
                 userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_LesPage;
+                userType.Activator = Activate_5_DashboardAdmin;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  Owl_learn_Blokboek5.MainPage
+            case 6:   //  Owl_learn_Blokboek5.DashboardConsulent
                 userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_MainPage;
+                userType.Activator = Activate_6_DashboardConsulent;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Owl_learn_Blokboek5.ToetsForm
+            case 7:   //  Owl_learn_Blokboek5.DashboardLeerling
                 userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_ToetsForm;
+                userType.Activator = Activate_7_DashboardLeerling;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Owl_learn_Blokboek5.LesPage
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_LesPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  Owl_learn_Blokboek5.MainPage
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Owl_learn_Blokboek5.Toetskiezen
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_Toetskiezen;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  Owl_learn_Blokboek5.ToetsPage
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_11_ToetsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  Owl_learn_Blokboek5.ToevoegAccount
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_ToevoegAccount;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  Owl_learn_Blokboek5.ToevoegLes
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_13_ToevoegLes;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  Owl_learn_Blokboek5.ToevoegVak
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_14_ToevoegVak;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Owl_learn_Blokboek5.ToevoegVraag
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_15_ToevoegVraag;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  Owl_learn_Blokboek5.VerwijderAccount
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_16_VerwijderAccount;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  Owl_learn_Blokboek5.VerwijderLes
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_17_VerwijderLes;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  Owl_learn_Blokboek5.VerwijderLesonderwerp
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_18_VerwijderLesonderwerp;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  Owl_learn_Blokboek5.VerwijderVak
+                userType = new global::Owl_learn_Blokboek5.Owl_learn_Blokboek5_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_19_VerwijderVak;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

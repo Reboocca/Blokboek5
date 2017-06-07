@@ -367,9 +367,6 @@
     <AppxPackagedFile Include="C:\Users\Rebecca\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\MySQL\MySQL Connector Net 6.8.7\Assemblies\RT\MySql.Data.RT.dll">
-      <PackagePath>MySql.Data.RT.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Background.png">
       <PackagePath>Assets\Background.png</PackagePath>
     </AppxPackagedFile>
