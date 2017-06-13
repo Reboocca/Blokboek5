@@ -13,6 +13,8 @@
     <RootPropertyPathName Name="VakNaam" />
     <RootPropertyPathName Name="Vak" />
     <RootPropertyPathName Name="LesonderwerpNaam" />
+    <RootPropertyPathName Name="Planning" />
+    <RootPropertyPathName Name="Leerling" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -120,6 +122,7 @@
       <RootProperty Name="DisplayMemberPath" />
       <RootProperty Name="SelectedValuePath" />
       <RootProperty Name="Margin" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Owl_learn_Blokboek5.BewerkLes" />
@@ -132,6 +135,7 @@
       <RootProperty Name="SelectedValuePath" />
       <RootProperty Name="DisplayMemberPath" />
       <RootProperty Name="Items" />
+      <RootProperty Name="Margin" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Owl_learn_Blokboek5.BewerkVak" />
@@ -146,9 +150,12 @@
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Owl_learn_Blokboek5.LesPage" />
     <RootType FullName="Owl_learn_Blokboek5.MainPage" />
+    <RootType FullName="Owl_learn_Blokboek5.PlanningLes" />
+    <RootType FullName="Owl_learn_Blokboek5.PlanningToets" />
     <RootType FullName="Owl_learn_Blokboek5.Toetskiezen" />
     <RootType FullName="Owl_learn_Blokboek5.ToetsPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
@@ -159,8 +166,19 @@
     </RootType>
     <RootType FullName="Owl_learn_Blokboek5.ToevoegAccount" />
     <RootType FullName="Owl_learn_Blokboek5.ToevoegLes" />
+    <RootType FullName="Owl_learn_Blokboek5.ToevoegLesonderwerp" />
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Owl_learn_Blokboek5.ToevoegPlanningLes" />
+    <RootType FullName="Owl_learn_Blokboek5.ToevoegPlanningToets" />
     <RootType FullName="Owl_learn_Blokboek5.ToevoegVak" />
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Owl_learn_Blokboek5.ToevoegVraag" />
     <RootType FullName="Owl_learn_Blokboek5.VerwijderAccount" />
     <RootType FullName="Owl_learn_Blokboek5.VerwijderLes" />

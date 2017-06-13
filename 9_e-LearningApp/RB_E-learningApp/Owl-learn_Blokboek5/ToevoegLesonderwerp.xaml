@@ -50,16 +50,14 @@
                     <RowDefinition Height="2*"/>
                     <RowDefinition Height="5*"/>
                     <RowDefinition Height="5*"/>
-                    <RowDefinition Height="20*"/>
                     <RowDefinition Height="5*"/>
                     <RowDefinition Height="5*"/>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" Fill="#FF9696F0"/>
                 <TextBlock Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Les toevoegen" FontSize="30px" FontFamily="Calibri Light" Foreground="White" />
-                <TextBlock Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Text="Hieronder kunt u de lesnaam van de nieuwe les invoeren, verder kunt u ook uitleg geven over de les die u aanmaakt. Uitleg is optioneel en is niet vereist. Vragen kunt u toevoegen wanneer u de les wijzigt." TextWrapping="Wrap" FontSize="14px" FontFamily="Calibri Light" Foreground="#FF191919" Margin="10.333,0.333,10.333,4.667" />
-                <TextBox x:Name="tbNaam" Grid.Row="3" HorizontalAlignment="Center" TextWrapping="Wrap" PlaceholderText="Voer hier de naam in van het vak" VerticalAlignment="Center" Height="27" Width="530" Grid.Column="1"/>
-                <Button x:Name="btOpslaan" Content="Sla nieuwe les op" Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Center" Width="530" Click="btOpslaan_Click"/>
-                <TextBox x:Name="tbUitleg" Grid.Row="4" HorizontalAlignment="Center" TextWrapping="Wrap" PlaceholderText="U kunt hier uitleg plaatsen over de nieuwe les" VerticalAlignment="Center" Height="174" Width="530" Grid.Column="1" Margin="6.333,10.333,6.667,10" />
+                <TextBlock Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Text="Hieronder kunt u de lesonderwerp naam van de nieuwe les invoeren, verder kunt u de lessen toevoegen op de volgende pagina." TextWrapping="Wrap" FontSize="14px" FontFamily="Calibri Light" Foreground="#FF191919" Margin="10.333,0.333,10.333,4.667" />
+                <TextBox x:Name="tbNaam" Grid.Row="3" HorizontalAlignment="Center" TextWrapping="Wrap" PlaceholderText="Voer hier de naam in van het lesonderwerp" VerticalAlignment="Center" Height="27" Width="530" Grid.Column="1"/>
+                <Button x:Name="btOpslaan" Content="Sla nieuwe lesonderwerp op" Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Center" Width="530" Click="btOpslaan_Click"/>
             </Grid>
         </Grid>
         <TextBlock HorizontalAlignment="Left" Margin="-145,289,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>

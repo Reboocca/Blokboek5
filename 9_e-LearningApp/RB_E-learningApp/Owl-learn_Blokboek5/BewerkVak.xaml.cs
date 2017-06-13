@@ -150,6 +150,8 @@ namespace Owl_learn_Blokboek5
                 var parameters = new user();
                 parameters.userID = userid;
                 parameters.selectedLesID = lesid;
+                parameters.selectedloID = selectedLOid;
+                parameters.selectedVakID = vakid;
 
                 this.Frame.Navigate(typeof(BewerkLes), parameters);
             }
@@ -176,12 +178,11 @@ namespace Owl_learn_Blokboek5
 
         private void btNieuwLO_Click(object sender, RoutedEventArgs e)
         {
+            var parameters = new user();
+            parameters.userID = userid;
+            parameters.selectedVakID = vakid;
 
-        }
-
-        private void btBewerkLO_Click(object sender, RoutedEventArgs e)
-        {
-
+            this.Frame.Navigate(typeof(ToevoegLesonderwerp), parameters);
         }
 
         private async void btVerwijderLO_Click(object sender, RoutedEventArgs e)
@@ -194,13 +195,30 @@ namespace Owl_learn_Blokboek5
             }
             else
             {
-                string lesid = ((Les)(lbLessen.SelectedItem)).ID;
                 var parameters = new user();
                 parameters.userID = userid;
                 parameters.selectedloID = selectedLOid;
                 parameters.selectedVakID = vakid;
 
                 this.Frame.Navigate(typeof(VerwijderLesonderwerp), parameters);
+            }
+        }
+
+        private async void btNieuwLes_Click(object sender, RoutedEventArgs e)
+        {
+            if (cbLO.SelectedIndex == -1)
+            {
+                var dialog = new MessageDialog("Selecteer eerst een lesonderwerp om er een les aan toe te voegen", "Foutmelding");
+                await dialog.ShowAsync();
+            }
+            else
+            {
+                var parameters = new user();
+                parameters.userID = userid;
+                parameters.selectedloID = selectedLOid;
+                parameters.selectedVakID = vakid;
+
+                this.Frame.Navigate(typeof(ToevoegLes), parameters);
             }
         }
     }

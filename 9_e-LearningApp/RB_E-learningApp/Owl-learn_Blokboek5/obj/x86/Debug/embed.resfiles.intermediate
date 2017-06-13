@@ -7,10 +7,15 @@ DashboardConsulent.xbf
 DashboardLeerling.xbf
 LesPage.xbf
 MainPage.xbf
+PlanningLes.xbf
+PlanningToets.xbf
 Toetskiezen.xbf
 ToetsPage.xbf
 ToevoegAccount.xbf
 ToevoegLes.xbf
+ToevoegLesonderwerp.xbf
+ToevoegPlanningLes.xbf
+ToevoegPlanningToets.xbf
 ToevoegVak.xbf
 ToevoegVraag.xbf
 VerwijderAccount.xbf
