@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2017 at 12:25 PM
+-- Generation Time: Jun 14, 2017 at 12:12 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -50,7 +50,7 @@ INSERT INTO `gebruikers` (`ID`, `Rol`, `Username`, `Password`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `medicijnen` (
-  `id` int(11) DEFAULT NULL,
+  `id` int(11) NOT NULL DEFAULT '0',
   `Naam` text,
   `GeregistreerdOfGeneriek` text,
   `ReceptOfZelfzorg` text,
@@ -64,7 +64,8 @@ CREATE TABLE IF NOT EXISTS `medicijnen` (
   `Schapcode` int(11) DEFAULT NULL,
   `Verrekenprijs` double DEFAULT NULL,
   `Prijs` double DEFAULT NULL,
-  `Voorraad` int(11) DEFAULT NULL
+  `Voorraad` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -4468,7 +4469,7 @@ INSERT INTO `medicijnen` (`id`, `Naam`, `GeregistreerdOfGeneriek`, `ReceptOfZelf
 --
 
 CREATE TABLE IF NOT EXISTS `overige` (
-  `artnr` int(11) DEFAULT NULL,
+  `artnr` int(11) NOT NULL DEFAULT '0',
   `omschrijving` text,
   `verstreenheid` text,
   `besteleenheid` text,
@@ -4481,7 +4482,8 @@ CREATE TABLE IF NOT EXISTS `overige` (
   `wekenvoorraad` int(11) DEFAULT NULL,
   `brutoprijs` int(11) DEFAULT NULL,
   `schapcode` int(11) DEFAULT NULL,
-  `lopendevoorraad` int(11) DEFAULT NULL
+  `lopendevoorraad` int(11) DEFAULT NULL,
+  PRIMARY KEY (`artnr`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
