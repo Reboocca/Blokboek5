@@ -558,3 +558,13 @@ D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\obj\x86\
 D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\obj\x86\Debug\ToevoegPlanningToets.xbf
 D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\PlanningToets.xbf
 D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\ToevoegPlanningToets.xbf
+D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\Cijferlijst.xbf
+D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\obj\x86\Debug\Cijferlijst.g.i.cs
+D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\obj\x86\Debug\Cijferlijst.g.cs
+D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\obj\x86\Debug\Cijferlijst.xaml
+D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\obj\x86\Debug\Cijferlijst.xbf
+D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\obj\x86\Debug\DagPlanning.g.i.cs
+D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\obj\x86\Debug\DagPlanning.g.cs
+D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\obj\x86\Debug\DagPlanning.xaml
+D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\obj\x86\Debug\DagPlanning.xbf
+D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\DagPlanning.xbf

@@ -8,12 +8,14 @@
     <RootPropertyPathName Name="LONaam" />
     <RootPropertyPathName Name="Lesonderwerp" />
     <RootPropertyPathName Name="Les" />
+    <RootPropertyPathName Name="Info" />
+    <RootPropertyPathName Name="Cijfer" />
+    <RootPropertyPathName Name="Vak" />
+    <RootPropertyPathName Name="Planning" />
     <RootPropertyPathName Name="Naam" />
     <RootPropertyPathName Name="Account" />
     <RootPropertyPathName Name="VakNaam" />
-    <RootPropertyPathName Name="Vak" />
     <RootPropertyPathName Name="LesonderwerpNaam" />
-    <RootPropertyPathName Name="Planning" />
     <RootPropertyPathName Name="Leerling" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -34,6 +36,7 @@
       <RootProperty Name="Children" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -86,6 +89,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
       <RootEvent Name="TextChanged" />
     </RootType>
@@ -139,6 +145,17 @@
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Owl_learn_Blokboek5.BewerkVak" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Owl_learn_Blokboek5.Cijferlijst" />
+    <RootType FullName="Owl_learn_Blokboek5.DagPlanning" />
     <RootType FullName="Owl_learn_Blokboek5.DashboardAdmin" />
     <RootType FullName="Owl_learn_Blokboek5.DashboardConsulent" />
     <RootType FullName="Owl_learn_Blokboek5.DashboardLeerling" />

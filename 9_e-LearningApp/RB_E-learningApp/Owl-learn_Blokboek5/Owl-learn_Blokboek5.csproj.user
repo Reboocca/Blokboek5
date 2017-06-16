@@ -7,4 +7,7 @@
   <PropertyGroup>
     <AppIconSource>D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\Assets\Icon.png</AppIconSource>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
+  </PropertyGroup>
 </Project>
