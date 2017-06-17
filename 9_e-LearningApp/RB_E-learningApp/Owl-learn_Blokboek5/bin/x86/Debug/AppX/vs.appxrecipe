@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-15T12:08:58.062</Modified>
+      <Modified>2017-06-17T10:59:11.708</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\Owl-learn_Blokboek5.exe">
       <PackagePath>entrypoint\Owl-learn_Blokboek5.exe</PackagePath>
-      <Modified>2017-06-15T12:08:57.355</Modified>
+      <Modified>2017-06-17T10:59:10.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Rebecca\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -630,11 +630,11 @@
     <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-15T12:08:57.820</Modified>
+      <Modified>2017-06-17T09:41:38.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\School\Gitblub\Visual Studios\2\RB_E-learningApp\Owl-learn_Blokboek5\bin\x86\Debug\Core\Owl-learn_Blokboek5.exe">
       <PackagePath>Owl-learn_Blokboek5.exe</PackagePath>
-      <Modified>2017-06-15T12:08:58.057</Modified>
+      <Modified>2017-06-17T10:59:11.703</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
